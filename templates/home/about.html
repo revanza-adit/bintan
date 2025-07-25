@@ -1,0 +1,77 @@
+{% extends "base/base.html" %} {% load static%} 
+{% block title %}About Us{% endblock %} {% block start %}
+
+<style>
+  .para-text {
+    line-height: 2rem;
+    text-align: justify;
+  }
+</style>
+
+<section class="section-content padding-y">
+  <div class="container-xl d-flex justify-content-center align-items-center">
+    <div class="row justify-content-center w-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img
+              src="{% static 'images/logorb.png' %}"
+              alt="About Logo"
+              class="img-fluid mb-4"
+            />
+            <h2>About Us</h2>
+            <p class="para-text">
+              Bintang Anak adalah toko sepatu lokal yang berkomitmen menyediakan produk berkualitas tinggi untuk anak-anak dan remaja.
+              Kami berdiri dengan semangat UMKM untuk memberikan pilihan sepatu yang nyaman, stylish, dan terjangkau.
+            </p>
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <h3>Misi</h3>
+            <p class="para-text">
+              Menyelesaikan Tugas ini
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>Visi</h3>
+            <p class="para-text">
+              Menyelesaikan Mata Kuliah ini
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <h3>Value</h3>
+            <i
+              class="fas fa-check-circle"
+              style="color: green; line-height: 2rem; text-align: justify"
+            ></i>
+            <strong>Customer First:</strong> Kami Memprioritaskan kepuasan pelanggan dan berusaha memberikan pengalaman belanja yang terbaik.
+            <br />
+
+            <i
+              class="fas fa-check-circle"
+              style="color: green; line-height: 2rem; text-align: justify"
+            ></i>
+            <strong>Quality:</strong>Kami berkomitmen untuk menyediakan produk berkualitas tinggi yang aman dan nyaman untuk anak-anak.
+            <br />
+            <i
+              class="fas fa-check-circle"
+              style="color: green; line-height: 2rem; text-align: justify"
+            ></i>
+            <strong>Integrity:</strong> Kami beroperasi dengan integritas, transparansi, dan kejujuran dalam setiap aspek bisnis kami.
+          </div>
+        </div>
+        <div class="row mt-3">
+          <p class="para-text">
+            Kami percaya bahwa setiap anak berhak mendapatkan sepatu yang nyaman dan stylish. Dengan pengalaman bertahun-tahun dalam industri sepatu, kami berkomitmen untuk memberikan produk terbaik yang memenuhi kebutuhan anak-anak dan remaja. Terima kasih telah memilih Bintang Anak sebagai pilihan utama Anda dalam berbelanja sepatu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

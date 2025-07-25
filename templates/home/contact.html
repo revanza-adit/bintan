@@ -1,0 +1,92 @@
+{% extends "base/base.html" %}
+{% block title %}Contact Us{% endblock %}
+{% block start %}
+
+<section class="section-content padding-bottom">
+  <div class="mx-auto" style="max-width: 85rem; margin-top: 50px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mr-auto">
+          <h2 style="text-align: left">Contact Us</h2>
+          <p
+            class="mb-5"
+            style="margin-top: revert; text-align: justify; line-height: 2rem"
+          >
+            Mempunyai pertanyaan atau butuh bantuan? Kami di sini untuk membantu Anda. Silakan hubungi kami melalui formulir di bawah ini atau melalui informasi kontak yang tersedia. Tim kami akan segera merespons pertanyaan Anda.
+          </p>
+          <ul class="contact-info list-unstyled pl-md-5 mb-5">
+            <li class="d-flex text-black mb-2">
+              <span class="mr-3"><i class="fas fa-map-marker-alt"></i></span>
+              Kotabumi, Lampung Utara, Lampung, Indonesia
+            </li>
+            <li class="d-flex text-black mb-2">
+              <span class="mr-3"><i class="fas fa-phone"></i></span>
+              +62
+            </li>
+            <li class="d-flex text-black">
+              <span class="mr-3"><i class="fas fa-envelope"></i></span>
+              <a href="mailto:support@ecommerce.com">bintang@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form method="POST" action="https://formspree.io/f/{{ form_id }}" class="mb-5">
+            {% csrf_token %} {% include "base/alert.html" %}
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="name" class="col-form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="first-name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="name" class="col-form-label">Last Name</label>
+                <input type="text" class="form-control" name="last-name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="email" class="col-form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="email"
+                  pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="message" class="col-form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  cols="30"
+                  rows="7"
+                >
+                </textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="btn btn-primary rounded-0 py-2 px-4"
+                />
+                <span class="submitting"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
