@@ -8,7 +8,7 @@
 
     <title>{% block title %}Order Information{% endblock %}</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logorb.png' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/queen.png' %}" />
 
     <style>
       .dlist-align dd {
@@ -57,42 +57,42 @@
 
           <!-- Order Details Summary -->
           <main class="col-md-6">
-            <h3 class="mb-4">Order Details</h3>
+            <h3 class="mb-4">Detail Order</h3>
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Order Information</h5>
+                <h5 class="card-title">Informasi Order</h5>
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Order ID #:</dt>
+                  <dt style="width: 135px">Order ID:</dt>
                   <dd class="text-right">
                     <strong>{{ order.order_id }}</strong>
                   </dd>
                 </dl>
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Place on:</dt>
+                  <dt style="width: 135px">Tempat on:</dt>
                   <dd class="text-right">
                     <strong>{{ order.order_date|date:"F j, Y" }}</strong>
                   </dd>
                 </dl>
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Customer:</dt>
+                  <dt style="width: 135px">Pembeli:</dt>
                   <dd class="text-right">
                     <strong>{{ order.user.get_full_name }}</strong>
                   </dd>
                 </dl>
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Payment Status:</dt>
+                  <dt style="width: 135px">Status Pembayaran:</dt>
                   <dd class="text-right">
                     <strong>{{ order.payment_status }}</strong>
                   </dd>
                 </dl>
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Payment Mode:</dt>
+                  <dt style="width: 135px">Mode Pembayaran:</dt>
                   <dd class="text-right">
                     <strong>{{ order.payment_mode }}</strong>
                   </dd>
                 </dl>
                 <dl class="dlist-align">
-                  <dt style="width: 136px">Shipping Address:</dt>
+                  <dt style="width: 136px">Alamat Belanja:</dt>
                   <dd class="text-right">
                     <strong>{{ order.shipping_address|default:"Not Provided" }}</strong>
                   </dd>
@@ -106,7 +106,7 @@
           <main class="col-md-4">
             <div class="card" style="margin-top: 59px">
               <div class="card-body">
-                <h5 class="card-title">Payment Summary</h5>
+                <h5 class="card-title">Daftar Belanja</h5>
                 <dl class="dlist-align">
                   <dt style="width: 135px">Item(s) Subtotal:</dt>
                   <dd class="text-right">
@@ -115,7 +115,7 @@
                 </dl>
 
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Coupon Applied:</dt>
+                  <dt style="width: 135px">Tambahkan Kupon:</dt>
                   <dd class="text-right">
                     <strong
                       >Rp{{ order.coupon.discount_amount|default:"0" }}</strong
@@ -124,7 +124,7 @@
                 </dl>
 
                 <dl class="dlist-align">
-                  <dt style="width: 135px">Grand Total:</dt>
+                  <dt style="width: 135px">Total Semua:</dt>
                   <dd class="text-right">
                     <strong>Rp{{ order.grand_total }}</strong>
                   </dd>

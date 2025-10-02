@@ -1,4 +1,4 @@
-🛍️ Bintang Anak – Toko Sepatu UMKM
+Marlinda – Toko E-commerce
 Bintang Anak adalah aplikasi web toko sepatu berbasis Django yang mendukung penjualan sepatu lokal untuk anak-anak dan remaja. Proyek ini dibangun untuk membantu UMKM memasarkan produk mereka secara online dengan fitur e-commerce modern.
 
 ✨ Fitur Utama
@@ -43,7 +43,6 @@ Clone repo
 bash
 Salin
 Edit
-git clone https://github.com/username/bintanganak.git
 cd bintanganak
 Aktifkan virtual environment
 
@@ -81,11 +80,11 @@ python manage.py runserver
 Buka di browser: http://127.0.0.1:8000
 
 📩 Kontak
-💼 Nama: RB Store
+💼 Nama: queen
 
-📧 Email: rbstore.shoes@gmail.com
+📧 Email: queen@gmail.com
 
-📱 WhatsApp: 0822-1234-5678
+📱 WhatsApp: 085383849200
 
-📷 Instagram: @rbstore.shoes
+📷 Instagram: @queen
 

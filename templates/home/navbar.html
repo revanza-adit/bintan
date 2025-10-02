@@ -51,16 +51,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto" style="gap: 20px;">
-          <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Beranda</a></li>
           {% if user.is_authenticated %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'wishlist' %}">Wishlist ({{ request.user.wishlist.count }})</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'wishlist' %}">Disukai ({{ request.user.wishlist.count }})</a></li>
           {% else %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'wishlist' %}">Wishlist</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'wishlist' %}">Disukai</a></li>
           {% endif %}
-          <li class="nav-item"><a class="nav-link" href="{% url 'order_history' %}">Your Orders</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'product_reviews' %}">Your Reviews</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'order_history' %}">Orderan Anda</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'product_reviews' %}">Review Anda</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">Tentang</a></li>
         </ul>
       </div>
     </div>
@@ -72,7 +72,7 @@
         <div class="col-lg-2 col-4">
           <div class="brand-wrap">
             <a href="{% url 'index' %}">
-              <img class="logo" src="{% static 'images/logorb.png' %}" />
+              <img class="logo" src="{% static 'images/queen.png' %}" />
             </a>
           </div>
         </div>

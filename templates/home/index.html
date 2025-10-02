@@ -32,9 +32,9 @@
   <div class="filter-section mb-3">
     <form method="GET" class="row">
       <div class="form-group col-md-6">
-        <label for="category">Category:</label>
+        <label for="category">Kategori:</label>
         <select id="category" name="category" class="form-control" onchange="this.form.submit()">
-          <option value="">All</option>
+          <option value="">Semua</option>
           {% for category in categories %}
           <option value="{{ category.category_name }}" {% if selected_category == category.category_name %} selected {% endif %}>
             {{ category.category_name }}
@@ -45,12 +45,12 @@
       
       <!-- Sort Section -->
       <div class="form-group col-md-6">
-        <label for="sort">Sort by:</label>
+        <label for="sort">Filter dari:</label>
         <select id="sort" name="sort" class="form-control" onchange="this.form.submit()">
-          <option value="">Select</option>
-          <option value="newest" {% if selected_sort == 'newest' %}selected{% endif %}>Newest</option>
-          <option value="priceAsc" {% if selected_sort == 'priceAsc' %}selected{% endif %}>Price: Low-High</option>
-          <option value="priceDesc" {% if selected_sort == 'priceDesc' %}selected{% endif %}>Price: High-Low</option>
+          <option value="">Pilih</option>
+          <option value="newest" {% if selected_sort == 'newest' %}selected{% endif %}>Terbaru</option>
+          <option value="priceAsc" {% if selected_sort == 'priceAsc' %}selected{% endif %}>Harga: Rendah-Tinggi</option>
+          <option value="priceDesc" {% if selected_sort == 'priceDesc' %}selected{% endif %}>Harga: Tinggi-Rendah</option>
         </select>
       </div>
     </form>
@@ -80,12 +80,12 @@
       {% if products.has_previous %}
       <li class="page-item">
         <a class="page-link" href="?page={{ products.previous_page_number }}" aria-label="Previous">
-          <span aria-hidden="true">&laquo; Previous</span>
+          <span aria-hidden="true">&laquo; Sebelum</span>
         </a>
       </li>
       {% else %}
       <li class="page-item disabled">
-        <a class="page-link">Previous</a>
+        <a class="page-link">Sebelum</a>
       </li>
       {% endif %}
 
@@ -98,12 +98,12 @@
       {% if products.has_next %}
       <li class="page-item">
         <a class="page-link" href="?page={{ products.next_page_number }}" aria-label="Next">
-          <span aria-hidden="true">Next &raquo;</span>
+          <span aria-hidden="true">Selanjutnya &raquo;</span>
         </a>
       </li>
       {% else %}
       <li class="page-item disabled">
-        <a class="page-link">Next</a>
+        <a class="page-link">Selanjutnya</a>
       </li>
       {% endif %}
     </ul>

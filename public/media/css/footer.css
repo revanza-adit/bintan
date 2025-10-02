@@ -1,5 +1,5 @@
 .footer {
-  background-color: #081828;
+  background-color: #EF5A94;
   position: relative;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .footer .footer-top .footer-newsletter .newsletter-form .button .btn:hover {
-  color: #081828;
+  color: #EF5A94;
   background-color: #fff;
 }
 
@@ -179,7 +179,7 @@
   font-size: 14px;
   font-weight: 600;
   padding: 13px 30px;
-  background-color: #0167f3;
+  background-color: #EF5A94;
   color: #fff;
   border: none;
   transition: 0.2s;
@@ -217,12 +217,12 @@
 
 .button .btn:hover {
   color: #fff;
-  background-color: #081828;
+  background-color: #EF5A94;
   box-shadow: 0 4px 4px #0000000f;
 }
 
 .button .btn-alt {
-  background-color: #081828 !important;
+  background-color: #EF5A94 !important;
   color: #fff !important;
 }
 
@@ -243,7 +243,7 @@
 }
 
 .button .btn-alt:hover {
-  background-color: #0167f3 !important;
+  background-color: #EF5A94 !important;
   color: #fff !important;
 }
 
@@ -275,7 +275,7 @@
   left: 0;
   width: 40px;
   height: 3px;
-  background-color: #0167f3;
+  background-color: #EF5A94;
   content: "";
 }
 
@@ -306,7 +306,7 @@
 
 .footer .single-footer.f-link ul li a:hover {
   padding-left: 5px;
-  color: #0167f3;
+  color: #EF5A94;
 }
 
 .footer .footer-bottom .inner-content {
@@ -365,7 +365,7 @@
 }
 
 .footer .footer-bottom .copyright p a:hover {
-  color: #0167f3;
+  color: #EF5A94;
 }
 
 .footer .footer-bottom .socila {
@@ -402,7 +402,7 @@
 }
 
 .footer .footer-bottom .socila li a:hover {
-  background-color: #0167f3;
+  background-color: #EF5A94;
   color: #fff;
   border-color: transparent;
 }
@@ -424,7 +424,7 @@
 }
 
 .header-banner {
-  background-color: #4757d2;
+  background-color: #EF5A94;
   text-align: center;
   color: #fff;
 }
@@ -449,7 +449,7 @@
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: #0167f3;
+  background: #EF5A94;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -467,5 +467,5 @@
 .scroll-top:hover {
   box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
   transform: translate3d(0, -5px, 0);
-  background-color: #081828;
+  background-color: #EF5A94;
 }
